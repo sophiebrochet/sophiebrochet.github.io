@@ -1856,28 +1856,74 @@ i, em {
   font-style: italic !important;
 }
 
-/* Primary headers and name */
-h2, h3, h4 {
+/* General body text */
+body, p {
+  color: #444444;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+/* Header Titles (Your Name, Section Headers) */
+h1, h2, h3, h4 {
+  color: #576c8c;
+  font-weight: 700;
+}
+
+/* Navigation Bar */
+.nav ul li a {
+  color: #576c8c;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #394b6f; /* darker shade on hover */
+}
+
+/* Logo/Name styling */
+.logo h2 {
   color: #576c8c;
 }
 
-/* Main navigation links */
-.nav ul li a {
-  color: #576c8c;
+/* Section Divider Line */
+hr {
+  border: none;
+  border-top: 2px solid #c0c7d6;
+  margin: 20px 0;
 }
-.nav ul li a:hover {
+
+/* Emphasized italic text */
+i {
+  font-style: italic;
+  color: #444444;
+}
+
+/* Footer */
+footer {
+  background-color: #fcfcfc;
+  border-top: 1px solid #e1e1e1;
+  color: #444444;
+}
+
+footer .copyright a {
+  color: #576c8c;
+  text-decoration: none;
+}
+
+footer .copyright a:hover {
   color: #394b6f;
 }
 
-/* Accent for hover or highlights */
-a:hover, .tags li .tag:hover {
-  background-color: #d8bfa7;
-  color: #222;
+/* Highlight links in content */
+a {
+  color: #576c8c;
+  text-decoration: none;
 }
 
-/* Optional: footer or section title background */
-footer {
-  background-color: #f9f9f9; /* keep it soft and clean */
+a:hover {
+  color: #394b6f;
+  text-decoration: underline;
 }
 
 
