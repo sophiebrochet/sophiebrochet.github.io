@@ -1856,3 +1856,22 @@ i, em {
   font-style: italic !important;
 }
 
+/* Accent color: Deep Teal */
+a {
+  color: #1C4D4F;
+  text-decoration: none;
+}
+a:hover {
+  color: #145053;
+  border-bottom: 1px solid #145053;
+}
+
+h2, h3 {
+  color: #1C4D4F;
+}
+
+hr {
+  border-top: 2px solid #145053;
+}
+
+
