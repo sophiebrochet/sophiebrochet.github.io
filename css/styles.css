@@ -1867,7 +1867,10 @@ a:hover {
 }
 
 h2, h3 {
-  color: #1C4D4F;
+  color: #1C4D4F !important;
+}
+body {
+  background-color: #fdfdfd;
 }
 
 hr {
