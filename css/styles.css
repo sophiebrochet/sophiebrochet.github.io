@@ -1851,3 +1851,8 @@ Responsive
         transition: .5s all; }
   .languages {
     padding-left: 220px; } }
+
+i, em {
+  font-style: italic !important;
+}
+
