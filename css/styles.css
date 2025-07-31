@@ -745,9 +745,9 @@ Header
   margin: 5rem 0;
   text-align: center; }
   .header .logo {
-    width: 280px;
-    margin: 0 auto;
-    position: relative; }
+  max-width: 350px; /* increase from whatever it currently is */
+  white-space: nowrap; /* prevent wrapping */
+  overflow: visible;   /* ensure full text shows */}
     .header .logo h1 {
       letter-spacing: 2.2rem;
       text-align: center;
