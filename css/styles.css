@@ -744,9 +744,14 @@ Header
 .header {
   margin: 5rem 0;
   text-align: center; }
+.header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
   .header .logo {
   max-width: 350px; /* increase from whatever it currently is */
   white-space: nowrap; /* prevent wrapping */
+  text-align: center;
   overflow: visible;   /* ensure full text shows */}
     .header .logo h1 {
       letter-spacing: 2.2rem;
