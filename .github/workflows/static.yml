@@ -23,6 +23,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'  # or './public' or './build' if you use a subfolder
+          name: github-pages-${{ github.run_id }}
 
       - name: Deploy to GitHub Pages
         id: deployment
