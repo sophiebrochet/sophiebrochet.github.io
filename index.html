@@ -1,188 +1,357 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<!-- Basic Page Needs
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Sophie Brochet</title>
-		<meta name="description" content="">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-		<!-- Mobile Specific Metas
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-		<!-- FONT
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'>
-	 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sophie Brochet</title>
 
-		<!-- CSS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="stylesheet" href="./css/styles.css">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico"/>
+
+    <!-- Search engines -->
+    <meta name="google-site-verification" content="YbVV0297Mv6AiP1qPDxCyEHBJ1boFvwdNj-RIogHEa0" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="content-language" content="en-us">
+
+    <meta name="keywords" content="sophie,brochet,uab,bse,structural,econometrics,labor,migration,universitat,autonoma,barcelona,school,economics,españa,idea,model,household,inequality,policy,uncertainty,applied,conflict,gender,women,research,economist,phd,genre,femme,économie,recherche,doctorant,doctorante,économiste,chercheur,chercheuse,travail,salaire,écart,wage,gap,structurel,économétrie,foyer,appliqué,université,university,espagne,france">
+
+    <meta name="description" content="Sophie Brochet is a PhD candidate in Economics at Universitat Autònoma de Barcelona and Barcelona School of Economics. Her research focuses on Labor Economics and Structural Microeconometrics. She is on the 2026–2027 Economics Job Market.">
+
+    <meta name="author" content="Sophie Brochet">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Existing responsive iframe styles -->
+    <style>
+        #Iframe-Liason-Sheet {
+            max-width: 1000px;
+            max-height: 1000px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .responsive-wrapper {
+            position: relative;
+            height: 0;
+            -webkit-overflow-scrolling: touch;
+            overflow: hidden;
+        }
+
+        .responsive-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            max-height: 1000px;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .responsive-wrapper-wxh-550x4000 {
+            padding-bottom: 363.6364%;
+        }
+
+        .iframe-border {
+            border: 1px solid #000;
+        }
+
+        .center-block-horiz {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
 
 
-		<!-- Favicon
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="shortcut icon" href="./favicon.ico"/>
+        /* ===================================
+           JOB MARKET BANNER
+           =================================== */
 
-		<!-- DEFINES STYLE OF THE PAGE -->
-	
-		    <!-- INDICATIONS FOR SEARCH ROBOTS: INDEX THE PAGE AND FOLLOW THE LINKS -->
-		    <meta name="google-site-verification" content="YbVV0297Mv6AiP1qPDxCyEHBJ1boFvwdNj-RIogHEa0" />
-		
-		    <meta name="robots" content="index, follow" />
-	
-		    <!-- LANGUAGE OF THE CONTENT IS ENGLISH -->
-		    <meta http-equiv="content-language" content="en-us">
-	
-		    <!-- KEYWORDS (TO RANGE HIGH IN SEARCHES) -->
-		    <meta name="keywords" content="sophie,brochet,uab,bse,structural,econometrics,labor,migration,universitat,autonoma,barcelona,school,economics,españa,uab,bse,idea,model,household,inequality,policy,uncertainty,applied,conflict,gender,women,research,economist,phd,genre,femme,économie,recherche,doctorant,doctorante,économiste,chercheur,chercheuse,travail,salaire,écart,wage,gap,structurel,économétrie,foyer,model,applied,appliqué,université,university,espagne,france">
-	
-		    <!-- PAGE DESCRIPTION (FOR SEARCH ENGINES) -->
-			<meta name="description" content="Sophie Brochet is a PhD student in Economics at Universitat Autònoma de Barcelona and Barcelona School of Economics. Her research interest is Structural Econometrics, Labor and Migration.">
-	
-		    <!-- PAGE AUTHOR (FOR SEARCH ENGINES) -->
-			<meta name="author" content="Sophie Brochet">
-		    
-	            <!-- Add icon library -->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        .job-market-banner {
+            background-color: #1C4D4F;
+            color: #ffffff;
+            text-align: center;
+            padding: 13px 20px;
+            margin: 24px 0 30px 0;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.1em;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            line-height: 1.5;
+        }
 
- <!-- RESPONSIVE IFRAME -->
-	
-     <style>
-		 #Iframe-Liason-Sheet {
-		   max-width: 1000px;
-		   max-height:1000px;
-		   overflow: hidden;
-		   border: none;
-		 }
-		  /* inner wrapper: make responsive */
-		 .responsive-wrapper {
-		   position: relative;
-		   height: 0;  /* gets height from padding-bottom setting */
-		   -webkit-overflow-scrolling: touch;
-           overflow:hidden;
-		 }
-		 .responsive-wrapper iframe {
-		   position: absolute;
-		   top: 0;
-		   left: 0;
-		   width: 100%;
-		   height: 200%;
-		   max-height: 1000px;
-		   margin: 0;
-		   padding: 0;
-		   border: none;
-		 }
-		 /* padding-bottom = h/w as a % */
-		 .responsive-wrapper-wxh-550x4000 {
-		   padding-bottom: 363.6364%;
-		 }
-		 .iframe-border {
-		   border: 1px solid #000;
-		 }
-		 .center-block-horiz {
-		   margin-left: auto !important;
-		   margin-right: auto !important;
-		 }  		
+
+        /* ===================================
+           REFERENCES
+           =================================== */
+
+        .references-section {
+            clear: both;
+            padding-top: 25px;
+            padding-bottom: 50px;
+        }
+
+        .references-section h5 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            column-gap: 20px;
+            text-align: center;
+        }
+
+        .reference {
+            text-align: center;
+            line-height: 1.65;
+        }
+
+        .reference-name {
+            font-weight: 600;
+            font-size: 1.05em;
+            margin-bottom: 8px;
+            white-space: nowrap;
+        }
+
+        .reference-role {
+            font-size: 0.82em;
+            font-weight: 400;
+        }
+
+        .reference-affiliation {
+            margin-bottom: 8px;
+        }
+
+        .reference-email {
+            font-size: 0.95em;
+            overflow-wrap: anywhere;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 700px) {
+
+            .references-grid {
+                grid-template-columns: 1fr;
+                row-gap: 30px;
+            }
+
+            .reference-name {
+                white-space: normal;
+            }
+
+            .job-market-banner {
+                font-size: 1em;
+                padding: 12px 15px;
+            }
+
+        }
+
     </style>
- 
-		
-	</head>
 
-	<body>
-		
+</head>
 
-		<!-- Header -->
-		<header class="header">
-			<div class="container">
-				<div class="logo">
-					<a href="index.html">
-						<h2 style="color: #1C4D4F;">Sophie Brochet</h2>
-					</a>
-				</div>
-			</div>
-		</header>
+<body>
 
-		<!-- Main Nav -->
-		<section class="container">
-			<nav class="nav">
-				
-					 
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="research.html">Research</a></li>
-					<li><a href="cv.html">CV</a></li>
-					<li><a href="teaching.html">Teaching</a></li>
-				</ul>
-				
-					
-			</nav>
-		
- 
-		
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h2 style="color: #1C4D4F;">Sophie Brochet</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Nav -->
+    <section class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <!-- ===================================
+         JOB MARKET BANNER
+         =================================== -->
+
+    <section class="container">
+        <div class="job-market-banner">
+            I am on the 2026–2027 Economics Job Market
+        </div>
+    </section>
+
+
+    <!-- ===================================
+         PAGE CONTENT
+         =================================== -->
+
+    <section class="sub-page container">
+
+        <figure>
+            <img src="img/photo.png"
+                 alt="Sophie Brochet"
+                 style="float:left;width:35%;padding-right:50px;"/>
+            <noscript>
+                <img src="img/news-1.jpg" alt=""/>
+            </noscript>
+        </figure>
+
+        <article class="right">
+
+            <div class="entry-content" id="info">
+
+                <p>
+                    I am a PhD candidate in Economics in the
+                    <a href="https://www.uabidea.eu/" target="_blank" rel="noopener noreferrer">IDEA Graduate Program</a>
+                    at the
+                    <a href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html" target="_blank" rel="noopener noreferrer">Universitat Autònoma de Barcelona (UAB)</a>
+                    and
+                    <a href="https://bse.eu/" target="_blank" rel="noopener noreferrer">Barcelona School of Economics</a>.
+                    My advisors are
+                    <a href="https://joanllull.github.io/" target="_blank" rel="noopener noreferrer">Joan Llull</a>
+                    and
+                    <a href="https://sites.google.com/site/lidiafarre78/home" target="_blank" rel="noopener noreferrer">Lídia Farré</a>.
+                </p>
+
+                <p>
+                    My research is in Labor Economics, using structural microeconometric methods to study labor market choices, wages, and inequality.
+                    My job market paper examines how workers' and managers' gender-role attitudes shape occupational sorting and gender wage inequality.
+                </p>
+
+                <a class="button button-primary"
+                   href="cv/cv.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Download CV
+                </a>
+
+                <hr>
+
+                <h5><a href="#">Contact Information</a></h5>
+
+                <strong>Email</strong>
+                <br>
+                <a href="mailto:sophie.brochet@bse.eu">sophie.brochet[at]bse.eu</a>
+
+                <br><br>
+
+                <strong>Social Media</strong>
+                <br>
+                <a href="https://www.linkedin.com/in/sophie-brochet-468707142/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </article>
 
     </section>
 
 
+    <!-- ===================================
+         REFERENCES
+         =================================== -->
+
+    <section class="references-section container" aria-labelledby="references-title">
+
+        <hr>
+
+        <h5 id="references-title">References</h5>
+
+        <div class="references-grid">
+
+            <!-- Joan Llull -->
+            <div class="reference">
+
+                <div class="reference-name">
+                    Joan Llull
+                    <span class="reference-role">(Advisor)</span>
+                </div>
+
+                <div class="reference-affiliation">
+                    Research Professor<br>
+                    IAE-CSIC and BSE
+                </div>
+
+                <div class="reference-email">
+                    joan.llull[at]iae.csic.es
+                </div>
+
+            </div>
 
 
+            <!-- Lidia Farre -->
+            <div class="reference">
+
+                <div class="reference-name">
+                    Lídia Farré
+                    <span class="reference-role">(Advisor)</span>
+                </div>
+
+                <div class="reference-affiliation">
+                    Tenured Scientist<br>
+                    IAE-CSIC and BSE
+                </div>
+
+                <div class="reference-email">
+                    lidia.farre[at]iae.csic.es
+                </div>
+
+            </div>
 
 
+            <!-- Christopher Flinn -->
+            <div class="reference">
 
+                <div class="reference-name">
+                    Christopher Flinn
+                </div>
 
+                <div class="reference-affiliation">
+                    Professor of Economics<br>
+                    NYU and CCA
+                </div>
 
- <!-- PAGE CONTENT -->
-		
-  
-		
-	<!--<section class="main container">-->
-	<section class="sub-page container">
+                <div class="reference-email">
+                    christopher.flinn[at]nyu.edu
+                </div>
 
-					<figure>
-						<img src="img/photo.png" alt="" style="float:left;width:35%; padding-right: 50px;"/>
-						<noscript><img src="img/news-1.jpg"/></noscript>
-						<!--<figcaption>- This is photo caption</figcaption>-->
-					</figure>
-			
-			<!--<article class="article">-->
-			<article class="right">
-				<div class="entry-content" id="info">
-	
-					<p>I am a PhD candidate in Economics in the <a href="https://www.uabidea.eu/" target="_blank" rel="noopener noreferrer">IDEA Graduate Program</a> at the <a href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html" target="_blank" rel="noopener noreferrer">Universitat Autonòma de Barcelona (UAB)</a> and <a href="https://bse.eu/" target="_blank" rel="noopener noreferrer">Barcelona School of Economics</a>. My advisors are <a href="https://joanllull.github.io/" target="_blank" rel="noopener noreferrer">Joan Llull</a> and <a href="https://sites.google.com/site/lidiafarre78/home" target="_blank" rel="noopener noreferrer">Lídia Farré</a>.</p> 
-					
+            </div>
 
-					<p>My research is in Labor Economics, using structural microeconometric methods to study labor market choices, wages, and inequality. My job market paper examines how workers' and managers' gender-role attitudes shape occupational sorting and gender wage inequality. </p>
+        </div>
 
-					<a class="button button-primary" href="cv/cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-					
-					<hr>
-					<h5><a href="#">Contact Information</a></h5>
-					
-					<strong>Email</strong> <br>
-					<a href="mailto:sophie.brochet@bse.edu">sophie.brochet[at]bse.eu</a>
-					
-					<br><br>
-					<strong>Social Media</strong> <br>
-					<a href="https://www.linkedin.com/in/sophie-brochet-468707142/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </a>
-				
+    </section>
 
-				</div>
-					
-			</article>
-
-		</section>
-
-		
-		
-
-		
-
-	</body>
-
+</body>
 </html>
-
