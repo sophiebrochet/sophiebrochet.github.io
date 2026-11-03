@@ -1,186 +1,225 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<!-- Basic Page Needs
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Sophie Brochet</title>
-		<meta name="description" content="">
 
-		<!-- Mobile Specific Metas
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-		<!-- FONT
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'>
-	 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sophie Brochet</title>
+    <meta name="description" content="">
 
-		<!-- CSS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="stylesheet" href="./css/styles.css">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,600,700,800"
+          rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic"
+          rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico"/>
+
+    <!-- Search engines -->
+    <meta name="robots" content="index, follow" />
+
+    <meta http-equiv="content-language" content="en-us">
+
+    <meta name="keywords" content="sophie,brochet,uab,bse,structural,econometrics,labor,migration,universitat,autonoma,barcelona,school,economics,españa,uab,bse,idea,model,household,inequality,policy,uncertainty,applied,conflict,gender,women,research,economist,phd,genre,femme,économie,recherche,doctorant,doctorante,économiste,chercheur,chercheuse,travail,salaire,écart,wage,gap,structurel,économétrie,foyer,model,applied,appliqué,université,university,espagne,france">
+
+    <meta name="description" content="Sophie Brochet is a PhD student in Economics at Universitat Autònoma de Barcelona and Barcelona School of Economics. Her research interest is Structural Econometrics, Labor and Migration.">
+
+    <meta name="author" content="Sophie Brochet">
+
+    <!-- Icon library -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        /* =====================================
+           EXISTING IFRAME STYLES
+           ===================================== */
+
+        #Iframe-Liason-Sheet {
+            max-width: 1000px;
+            max-height: 1000px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .responsive-wrapper {
+            position: relative;
+            height: 0;
+            -webkit-overflow-scrolling: touch;
+            overflow: hidden;
+        }
+
+        .responsive-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            max-height: 1000px;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .responsive-wrapper-wxh-550x4000 {
+            padding-bottom: 363.6364%;
+        }
+
+        .iframe-border {
+            border: 1px solid #000;
+        }
+
+        .center-block-horiz {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
 
 
-		<!-- Favicon
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="shortcut icon" href="./favicon.ico"/>
+        /* =====================================
+           TYPOGRAPHY
+           Match corrected homepage
+           Preserve original font families
+           ===================================== */
 
-		<!-- DEFINES STYLE OF THE PAGE -->
-	
-		    <!-- INDICATIONS FOR SEARCH ROBOTS: INDEX THE PAGE AND FOLLOW THE LINKS -->
-		    <meta name="robots" content="index, follow" />
-	
-		    <!-- LANGUAGE OF THE CONTENT IS ENGLISH -->
-		    <meta http-equiv="content-language" content="en-us">
-	
-		    <!-- KEYWORDS (TO RANGE HIGH IN SEARCHES) -->
-		    <meta name="keywords" content="sophie,brochet,uab,bse,structural,econometrics,labor,migration,universitat,autonoma,barcelona,school,economics,españa,uab,bse,idea,model,household,inequality,policy,uncertainty,applied,conflict,gender,women,research,economist,phd,genre,femme,économie,recherche,doctorant,doctorante,économiste,chercheur,chercheuse,travail,salaire,écart,wage,gap,structurel,économétrie,foyer,model,applied,appliqué,université,university,espagne,france">
-	
-		    <!-- PAGE DESCRIPTION (FOR SEARCH ENGINES) -->
-			<meta name="description" content="Sophie Brochet is a PhD student in Economics at Universitat Autònoma de Barcelona and Barcelona School of Economics. Her research interest is Structural Econometrics, Labor and Migration.">
-	
-		    <!-- PAGE AUTHOR (FOR SEARCH ENGINES) -->
-			<meta name="author" content="Sophie Brochet">
-		    
-	            <!-- Add icon library -->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        .nav ul li a {
+            font-size: 15px;
+        }
 
- <!-- RESPONSIVE IFRAME -->
-	
-     <style>
-		 #Iframe-Liason-Sheet {
-		   max-width: 1000px;
-		   max-height:1000px;
-		   overflow: hidden;
-		   border: none;
-		 }
-		  /* inner wrapper: make responsive */
-		 .responsive-wrapper {
-		   position: relative;
-		   height: 0;  /* gets height from padding-bottom setting */
-		   -webkit-overflow-scrolling: touch;
-           overflow:hidden;
-		 }
-		 .responsive-wrapper iframe {
-		   position: absolute;
-		   top: 0;
-		   left: 0;
-		   width: 100%;
-		   height: 200%;
-		   max-height: 1000px;
-		   margin: 0;
-		   padding: 0;
-		   border: none;
-		 }
-		 /* padding-bottom = h/w as a % */
-		 .responsive-wrapper-wxh-550x4000 {
-		   padding-bottom: 363.6364%;
-		 }
-		 .iframe-border {
-		   border: 1px solid #000;
-		 }
-		 .center-block-horiz {
-		   margin-left: auto !important;
-		   margin-right: auto !important;
-		 }  		
+        .teaching-text {
+            font-size: 16px;
+        }
+
+        @media (max-width: 700px) {
+
+            .nav ul li a {
+                font-size: 14px;
+            }
+
+        }
+
     </style>
- 
-		
-	</head>
 
-	<body>
-		
+</head>
 
-		<!-- Header -->
-		<header class="header">
-			<div class="container">
-				<div class="logo">
-					<a href="index.html">
-						<h2 style="color: #1C4D4F;">Sophie Brochet</h2>
-						<h4>Teaching</h4>
-					</a>
-				</div>
-			</div>
-		</header>
+<body>
 
-		<!-- Main Nav -->
-		<section class="container">
-			<nav class="nav">
-				
-					 
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="research.html">Research</a></li>
-					<li><a href="cv.html">CV</a></li>
-					<li><a href="teaching.html">Teaching</a></li>
-				</ul>
-				
-					
-			</nav>
-		
- 
-		
+
+    <!-- =====================================
+         HEADER — UNCHANGED
+         ===================================== -->
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h2 style="color: #1C4D4F;">Sophie Brochet</h2>
+                    <h4>Teaching</h4>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =====================================
+         MAIN NAV
+         ===================================== -->
+
+    <section class="container">
+
+        <nav class="nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+
+        </nav>
 
     </section>
 
 
+    <!-- =====================================
+         PAGE CONTENT
+         ===================================== -->
+
+    <section class="sub-page container">
+
+        <h3>Instructor</h3>
+        <hr>
+
+        <div class="teaching-text">
+
+            <b>Applied Mathematics and Statistics Brush-Up</b>,
+            <i>Fall 2024 and 2025</i><br>
+            Barcelona School of Economics<br>
+            Masters level. 23 lecture hours.
+
+        </div>
+
+    </section>
 
 
+    <section class="main container">
+
+        <h3>Teaching Assistant</h3>
+        <hr>
+
+        <div class="teaching-text">
+
+            <b>Quantitative and Statistical Methods I</b>,
+            <i>Fall 2024 and 2025</i><br>
+            Lecturers: Maite Cabeza and Michael Creel (2024), Lidia Farré and Pierre Magontier (2025)<br>
+            Barcelona School of Economics<br>
+            Masters level. 10 lecture hours.
+
+            <br><br>
+
+            <b>Machine Learning and Causal Inference</b>,
+            <i>Spring 2024</i><br>
+            Lecturer: Hanna Wang<br>
+            Barcelona School of Economics<br>
+            Masters level. 5 lecture hours.
+
+            <br><br>
+
+            <b>Microeconometrics</b>,
+            <i>Fall 2023</i><br>
+            Lecturer: Joan Llull<br>
+            Universitat Autònoma de Barcelona<br>
+            PhD track MRes level. 5 lecture hours.
+
+        </div>
+
+    </section>
 
 
+    <section class="main container" style="padding-top: 3%">
 
+        <div class="teaching-text">
 
+            <i>Teaching evaluations are available upon request.</i><br>
+            &nbsp;
 
- <!-- PAGE CONTENT -->
-		
+        </div>
 
-		<section class="sub-page container">
-		
-			<h3>Instructor</h3>
-				<hr>
-				
-				<b>Applied Mathematics and Statistics Brush-Up</b>, <i>Fall 2024 and 2025</i><br>
-				Barcelona School of Economics<br>
-				Masters level. 23 lecture hours.
-			 
+    </section>
 
-			
-		</section>
-		<section class="main container">
-			<h3>Teaching Assistant</h3>
-				<hr>
-
-				<b>Quantitative and Statistical Methods I</b>, <i>Fall 2024 and 2025</i><br>
-				Lecturers: Maite Cabeza and Michael Creel (2024), Lidia Farré and Pierre Magontier (2025)<br>
-				Barcelona School of Economics <br>
-				Masters level. 10 lecture hours.
-
-				<br><br>
-			
-				<b>Machine Learning and Causal Inference</b>, <i>Spring 2024</i><br>
-				Lecturer: Hanna Wang <br>
-				Barcelona School of Economics <br>
-				Masters level. 5 lecture hours.
-
-				<br><br>
-
-				<b>Microeconometrics</b>, <i>Fall 2023</i><br>
-				Lecturer: Joan Llull <br>
-				Universitat Autònoma de Barcelona <br>
-				PhD track MRes level. 5 lecture hours.
-			 
-		</section>
-
-		<section class="main container", style="padding-top: 3%">
-			<i>Teaching evaluations are available upon request.</i><br>
-			&nbsp;
-			 
-		</section>
-
-	</body>
-
+</body>
 </html>
