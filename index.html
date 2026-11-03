@@ -3,9 +3,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 <head>
 
@@ -28,12 +26,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.ico"/>
 
-    <!-- DEFINES STYLE OF THE PAGE -->
-
+    <!-- Search engines -->
     <meta name="google-site-verification" content="YbVV0297Mv6AiP1qPDxCyEHBJ1boFvwdNj-RIogHEa0" />
-
     <meta name="robots" content="index, follow" />
-
     <meta http-equiv="content-language" content="en-us">
 
     <meta name="keywords" content="sophie,brochet,uab,bse,structural,econometrics,labor,migration,universitat,autonoma,barcelona,school,economics,españa,uab,bse,idea,model,household,inequality,policy,uncertainty,applied,conflict,gender,women,research,economist,phd,genre,femme,économie,recherche,doctorant,doctorante,économiste,chercheur,chercheuse,travail,salaire,écart,wage,gap,structurel,économétrie,foyer,model,applied,appliqué,université,university,espagne,france">
@@ -44,7 +39,6 @@
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
     <style>
 
@@ -91,89 +85,165 @@
 
 
         /* =====================================
+           HOMEPAGE LAYOUT
+           Changes only below the navigation
+           ===================================== */
+
+        .home-layout {
+            display: grid;
+            grid-template-columns: 35% minmax(0, 1fr);
+            column-gap: 50px;
+            align-items: start;
+        }
+
+        .home-photo {
+            float: none !important;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .home-photo img {
+            display: block;
+            float: none !important;
+            width: 100% !important;
+            height: auto;
+            padding: 0 !important;
+            margin: 0;
+        }
+
+        .home-right {
+            float: none !important;
+            width: auto !important;
+            min-width: 0;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .home-right .entry-content {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100%;
+        }
+
+
+        /* =====================================
            JOB MARKET BANNER
-           Only inside the right column
+           Compact, aligned with the text
            ===================================== */
 
         .job-market-banner {
-            background-color: #4F607F;
+            display: inline-block;
+            box-sizing: border-box;
+            max-width: 100%;
+            background: #4F607F;
             color: #ffffff;
-            text-align: center;
-            padding: 12px 15px;
-            margin: 0 0 28px 0;
             font-family: 'Raleway', sans-serif;
             font-size: 1.05em;
             font-weight: 600;
-            letter-spacing: 0.015em;
             line-height: 1.5;
+            letter-spacing: 0.015em;
+            text-align: center;
+            padding: 11px 22px;
+            margin: 0 0 28px 0;
+        }
+
+
+        /* =====================================
+           CONTACT INFORMATION
+           Below the photo
+           ===================================== */
+
+        .home-contact {
+            margin-top: 28px;
+        }
+
+        .home-contact h5 {
+            margin-top: 0;
         }
 
 
         /* =====================================
            REFERENCES
+           Below Download CV, right column
            ===================================== */
 
-        .references-section {
-            clear: both;
-            padding-top: 25px;
-            padding-bottom: 50px;
+        .home-references {
+            margin-top: 44px;
         }
 
-        .references-section h5 {
-            text-align: center;
-            margin-bottom: 30px;
+        .home-references h5 {
+            margin: 0 0 25px 0;
+            color: #4F607F;
         }
 
-        .references-grid {
+        .home-references-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
-            column-gap: 20px;
-            text-align: center;
+            column-gap: 12px;
+            align-items: start;
         }
 
-        .reference {
+        .home-reference {
+            min-width: 0;
             text-align: center;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
-        .reference-name {
+        .home-reference-name {
+            font-size: 0.98em;
             font-weight: 600;
-            font-size: 1.05em;
-            margin-bottom: 8px;
+            margin-bottom: 7px;
             white-space: nowrap;
         }
 
-        .reference-role {
-            font-size: 0.82em;
+        .home-reference-role {
+            font-size: 0.78em;
             font-weight: 400;
         }
 
-        .reference-affiliation {
-            margin-bottom: 8px;
+        .home-reference-affiliation {
+            font-size: 0.94em;
+            margin-bottom: 7px;
         }
 
-        .reference-email {
-            font-size: 0.95em;
+        .home-reference-email {
+            font-size: 0.85em;
             overflow-wrap: anywhere;
         }
 
 
-        /* Mobile layout for references */
+        /* =====================================
+           RESPONSIVE LAYOUT
+           ===================================== */
 
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
 
-            .references-grid {
+            .home-layout {
                 grid-template-columns: 1fr;
-                row-gap: 30px;
+                gap: 34px;
             }
 
-            .reference-name {
+            .home-left {
+                max-width: 420px;
+            }
+
+            .home-reference-name {
                 white-space: normal;
             }
 
+        }
+
+        @media (max-width: 550px) {
+
+            .home-references-grid {
+                grid-template-columns: 1fr;
+                row-gap: 22px;
+            }
+
             .job-market-banner {
-                font-size: 1em;
-                padding: 12px 10px;
+                font-size: 0.98em;
+                padding: 10px 14px;
             }
 
         }
@@ -181,7 +251,6 @@
     </style>
 
 </head>
-
 
 <body>
 
@@ -221,195 +290,217 @@
     </section>
 
 
-
     <!-- =====================================
          PAGE CONTENT
          ===================================== -->
 
     <section class="sub-page container">
 
-        <!-- PHOTO -->
-
-        <figure>
-            <img src="img/photo.png"
-                 alt="Sophie Brochet"
-                 style="float:left;width:35%; padding-right: 50px;"/>
-
-            <noscript>
-                <img src="img/news-1.jpg" alt=""/>
-            </noscript>
-        </figure>
+        <div class="home-layout">
 
 
-        <!-- RIGHT COLUMN -->
+            <!-- =====================================
+                 LEFT COLUMN
+                 PHOTO + CONTACT INFORMATION
+                 ===================================== -->
 
-        <article class="right">
+            <aside class="home-left">
 
-            <div class="entry-content" id="info">
+                <figure class="home-photo">
 
+                    <img src="img/photo.png"
+                         alt="Sophie Brochet"/>
 
-                <!-- JOB MARKET BANNER -->
+                    <noscript>
+                        <img src="img/news-1.jpg" alt=""/>
+                    </noscript>
 
-                <div class="job-market-banner">
-                    I am on the 2026–2027 Economics Job Market
-                </div>
-
-
-                <!-- BIOGRAPHY -->
-
-                <p>
-                    I am a PhD candidate in Economics in the
-                    <a href="https://www.uabidea.eu/"
-                       target="_blank"
-                       rel="noopener noreferrer">IDEA Graduate Program</a>
-                    at the
-                    <a href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html"
-                       target="_blank"
-                       rel="noopener noreferrer">Universitat Autònoma de Barcelona (UAB)</a>
-                    and
-                    <a href="https://bse.eu/"
-                       target="_blank"
-                       rel="noopener noreferrer">Barcelona School of Economics</a>.
-                    My advisors are
-                    <a href="https://joanllull.github.io/"
-                       target="_blank"
-                       rel="noopener noreferrer">Joan Llull</a>
-                    and
-                    <a href="https://sites.google.com/site/lidiafarre78/home"
-                       target="_blank"
-                       rel="noopener noreferrer">Lídia Farré</a>.
-                </p>
-
-
-                <!-- RESEARCH -->
-
-                <p>
-                    My research is in Labor Economics, using structural microeconometric methods to study labor market choices, wages, and inequality.
-                    My job market paper examines how workers' and managers' gender-role attitudes shape occupational sorting and gender wage inequality.
-                </p>
-
-
-                <!-- CV -->
-
-                <a class="button button-primary"
-                   href="cv/cv.pdf"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Download CV
-                </a>
-
-
-                <hr>
+                </figure>
 
 
                 <!-- CONTACT INFORMATION -->
 
-                <h5><a href="#">Contact Information</a></h5>
+                <div class="home-contact">
 
-                <strong>Email</strong>
-                <br>
-                <a href="mailto:sophie.brochet@bse.eu">sophie.brochet[at]bse.eu</a>
+                    <h5><a href="#">Contact Information</a></h5>
 
-                <br><br>
+                    <strong>Email</strong>
+                    <br>
 
-                <strong>Social Media</strong>
-                <br>
-                <a href="https://www.linkedin.com/in/sophie-brochet-468707142/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    LinkedIn
-                </a>
+                    <a href="mailto:sophie.brochet@bse.eu">
+                        sophie.brochet[at]bse.eu
+                    </a>
 
+                    <br><br>
 
-            </div>
+                    <strong>Social Media</strong>
+                    <br>
 
-        </article>
+                    <a href="https://www.linkedin.com/in/sophie-brochet-468707142/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
 
-    </section>
-
-
-
-    <!-- =====================================
-         REFERENCES
-         Three columns across full page width
-         ===================================== -->
-
-    <section class="references-section container"
-             aria-labelledby="references-title">
-
-        <hr>
-
-        <h5 id="references-title">References</h5>
-
-
-        <div class="references-grid">
-
-
-            <!-- JOAN LLULL -->
-
-            <div class="reference">
-
-                <div class="reference-name">
-                    Joan Llull
-                    <span class="reference-role">(Advisor)</span>
                 </div>
 
-                <div class="reference-affiliation">
-                    IAE-CSIC and BSE
+            </aside>
+
+
+            <!-- =====================================
+                 RIGHT COLUMN
+                 BANNER + BIO + CV + REFERENCES
+                 ===================================== -->
+
+            <article class="right home-right">
+
+                <div class="entry-content" id="info">
+
+
+                    <!-- JOB MARKET BANNER -->
+
+                    <div class="job-market-banner">
+                        I am on the 2026–2027 Economics Job Market
+                    </div>
+
+
+                    <!-- BIOGRAPHY -->
+
+                    <p>
+                        I am a PhD candidate in Economics in the
+                        <a href="https://www.uabidea.eu/"
+                           target="_blank"
+                           rel="noopener noreferrer">IDEA Graduate Program</a>
+                        at the
+                        <a href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html"
+                           target="_blank"
+                           rel="noopener noreferrer">Universitat Autònoma de Barcelona (UAB)</a>
+                        and
+                        <a href="https://bse.eu/"
+                           target="_blank"
+                           rel="noopener noreferrer">Barcelona School of Economics</a>.
+                        My advisors are
+                        <a href="https://joanllull.github.io/"
+                           target="_blank"
+                           rel="noopener noreferrer">Joan Llull</a>
+                        and
+                        <a href="https://sites.google.com/site/lidiafarre78/home"
+                           target="_blank"
+                           rel="noopener noreferrer">Lídia Farré</a>.
+                    </p>
+
+                    <!-- Add the future sentence about the
+                         Collegio Carlo Alberto visit here. -->
+
+
+                    <!-- RESEARCH -->
+
+                    <p>
+                        My research is in Labor Economics, using structural
+                        microeconometric methods to study labor market choices,
+                        wages, and inequality. My job market paper examines
+                        how workers' and managers' gender-role attitudes
+                        shape occupational sorting and gender wage inequality.
+                    </p>
+
+
+                    <!-- CV -->
+
+                    <a class="button button-primary"
+                       href="cv/cv.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Download CV
+                    </a>
+
+
+                    <!-- =====================================
+                         REFERENCES
+                         ===================================== -->
+
+                    <section class="home-references"
+                             aria-labelledby="references-title">
+
+                        <h5 id="references-title">References</h5>
+
+
+                        <div class="home-references-grid">
+
+
+                            <!-- JOAN LLULL -->
+
+                            <div class="home-reference">
+
+                                <div class="home-reference-name">
+                                    Joan Llull
+                                    <span class="home-reference-role">
+                                        (Advisor)
+                                    </span>
+                                </div>
+
+                                <div class="home-reference-affiliation">
+                                    IAE-CSIC and BSE
+                                </div>
+
+                                <div class="home-reference-email">
+                                    joan.llull[at]iae.csic.es
+                                </div>
+
+                            </div>
+
+
+                            <!-- LIDIA FARRE -->
+
+                            <div class="home-reference">
+
+                                <div class="home-reference-name">
+                                    Lídia Farré
+                                    <span class="home-reference-role">
+                                        (Advisor)
+                                    </span>
+                                </div>
+
+                                <div class="home-reference-affiliation">
+                                    IAE-CSIC and BSE
+                                </div>
+
+                                <div class="home-reference-email">
+                                    lidia.farre[at]iae.csic.es
+                                </div>
+
+                            </div>
+
+
+                            <!-- CHRISTOPHER FLINN -->
+
+                            <div class="home-reference">
+
+                                <div class="home-reference-name">
+                                    Christopher Flinn
+                                </div>
+
+                                <div class="home-reference-affiliation">
+                                    NYU and CCA
+                                </div>
+
+                                <div class="home-reference-email">
+                                    christopher.flinn[at]nyu.edu
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
                 </div>
 
-                <div class="reference-email">
-                    joan.llull[at]iae.csic.es
-                </div>
-
-            </div>
-
-
-
-            <!-- LIDIA FARRE -->
-
-            <div class="reference">
-
-                <div class="reference-name">
-                    Lídia Farré
-                    <span class="reference-role">(Advisor)</span>
-                </div>
-
-                <div class="reference-affiliation">
-                    IAE-CSIC and BSE
-                </div>
-
-                <div class="reference-email">
-                    lidia.farre[at]iae.csic.es
-                </div>
-
-            </div>
-
-
-
-            <!-- CHRISTOPHER FLINN -->
-
-            <div class="reference">
-
-                <div class="reference-name">
-                    Christopher Flinn
-                </div>
-
-                <div class="reference-affiliation">
-                    NYU and CCA
-                </div>
-
-                <div class="reference-email">
-                    christopher.flinn[at]nyu.edu
-                </div>
-
-            </div>
-
+            </article>
 
         </div>
 
     </section>
-
 
 </body>
 </html>
