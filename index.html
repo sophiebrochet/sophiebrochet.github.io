@@ -11,18 +11,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sophie Brochet</title>
-    <meta name="description" content="">
-
-    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Fonts -->
+    <!-- Original fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800"
           rel="stylesheet" type="text/css">
+
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic"
           rel="stylesheet" type="text/css">
 
-    <!-- Existing CSS -->
+    <!-- Original CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- Favicon -->
@@ -35,7 +33,8 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="content-language" content="en-us">
 
-    <meta name="keywords" content="sophie,brochet,uab,bse,structural,econometrics,labor,migration,universitat,autonoma,barcelona,school,economics,españa,uab,bse,idea,model,household,inequality,policy,uncertainty,applied,conflict,gender,women,research,economist,phd,genre,femme,économie,recherche,doctorant,doctorante,économiste,chercheur,chercheuse,travail,salaire,écart,wage,gap,structurel,économétrie,foyer,model,applied,appliqué,université,university,espagne,france">
+    <meta name="keywords"
+          content="sophie,brochet,uab,bse,structural,econometrics,labor,migration,universitat,autonoma,barcelona,school,economics,idea,model,household,inequality,gender,women,research,economist,phd,wage,gap,applied,university">
 
     <meta name="description"
           content="Sophie Brochet is a PhD candidate in Economics at Universitat Autònoma de Barcelona and Barcelona School of Economics. Her research focuses on Labor Economics and Structural Microeconometrics.">
@@ -94,21 +93,25 @@
 
         /* =====================================
            TYPOGRAPHY
-           Slightly larger throughout
-           Name/header size unchanged
+           Original font families preserved
+           No global body override
            ===================================== */
-
-        body {
-            font-size: 16px;
-        }
-
-        /* Navigation: only change font size */
 
         .nav ul li a {
             font-size: 15px;
         }
 
-        /* Section headings */
+        .home-right .entry-content > p {
+            font-size: 16px;
+        }
+
+        .home-contact {
+            font-size: 16px;
+        }
+
+        .home-reference {
+            font-size: 16px;
+        }
 
         .home-contact h5,
         .home-references h5 {
@@ -118,7 +121,6 @@
 
         /* =====================================
            HOMEPAGE LAYOUT
-           Changes only below navigation
            ===================================== */
 
         .home-layout {
@@ -170,7 +172,7 @@
             background: #4F607F;
             color: #ffffff;
             font-family: 'Raleway', sans-serif;
-            font-size: 1.08em;
+            font-size: 16px;
             font-weight: 600;
             line-height: 1.5;
             letter-spacing: 0.015em;
@@ -182,7 +184,6 @@
 
         /* =====================================
            CONTACT INFORMATION
-           Below the photo
            ===================================== */
 
         .home-contact {
@@ -205,7 +206,6 @@
 
         /* =====================================
            REFERENCES
-           Thin separator above the section
            ===================================== */
 
         .home-references {
@@ -255,7 +255,8 @@
             overflow-wrap: anywhere;
         }
 
-        /* Preserve the appearance of reference links */
+        /* Clickable references:
+           preserve original appearance */
 
         .home-reference a,
         .home-reference a:visited {
@@ -298,7 +299,7 @@
             }
 
             .job-market-banner {
-                font-size: 1em;
+                font-size: 15px;
                 padding: 10px 14px;
             }
 
@@ -336,8 +337,7 @@
 
 
     <!-- =====================================
-         MAIN NAV — ORIGINAL STRUCTURE
-         Only font size slightly increased
+         MAIN NAV
          ===================================== -->
 
     <section class="container">
@@ -415,7 +415,6 @@
 
             <!-- =====================================
                  RIGHT COLUMN
-                 BANNER + BIO + CV + REFERENCES
                  ===================================== -->
 
             <article class="right home-right">
@@ -450,7 +449,7 @@
                            target="_blank"
                            rel="noopener noreferrer">Joan Llull</a>
                         and
-                        <a href="https://lidiafarre.com"
+                        <a href="https://sites.google.com/site/lidiafarre78/home"
                            target="_blank"
                            rel="noopener noreferrer">Lídia Farré</a>.
                         In the first half of 2026, I visited
@@ -523,7 +522,9 @@
                                 </div>
 
                                 <div class="home-reference-email">
-                                    <a href="mailto:joan.llull@iae.csic.es">joan.llull[at]iae.csic.es</a>
+                                    <a href="mailto:joan.llull@iae.csic.es">
+                                        joan.llull[at]iae.csic.es
+                                    </a>
                                 </div>
 
                             </div>
@@ -535,7 +536,7 @@
 
                                 <div class="home-reference-name">
 
-                                    <a href="https://lidiafarre.com"
+                                    <a href="https://sites.google.com/site/lidiafarre78/home"
                                        target="_blank"
                                        rel="noopener noreferrer">Lídia Farré</a>
 
@@ -550,7 +551,9 @@
                                 </div>
 
                                 <div class="home-reference-email">
-                                    <a href="mailto:lidia.farre@iae.csic.es">lidia.farre[at]iae.csic.es</a>
+                                    <a href="mailto:lidia.farre@iae.csic.es">
+                                        lidia.farre[at]iae.csic.es
+                                    </a>
                                 </div>
 
                             </div>
@@ -573,7 +576,9 @@
                                 </div>
 
                                 <div class="home-reference-email">
-                                    <a href="mailto:christopher.flinn@nyu.edu">christopher.flinn[at]nyu.edu</a>
+                                    <a href="mailto:christopher.flinn@nyu.edu">
+                                        christopher.flinn[at]nyu.edu
+                                    </a>
                                 </div>
 
                             </div>
